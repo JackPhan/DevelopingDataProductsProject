@@ -1,0 +1,48 @@
+---
+title       : How to predict bench press ability based on body weight
+subtitle    : 
+author      : Jack Phan
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+## Relationship between body weight and bench press ability
+
+1. Less than 1.0: Weak
+2. 1.0-1.49: Ordinary
+3. > 1.5: Strong
+
+--- .class #id 
+
+## Algorithm: Bench 1.5 Times Your Body Weight 
+1. Type your body weight in input box
+2. My algorithmn will simple calculate your bench press ability by (Body Weight * 1.5)
+
+--- .class #id 
+
+## R code for prediction model
+For example: Your weight is 50 kg. Your bench press ability will be 50 * 1.5 = 75 kg.
+
+
+```r
+bodyweight <- 50
+benchpress <- bodyweight * 1.5
+benchpress
+```
+
+```
+## [1] 75
+```
+
+
+--- .class #id
+
+## 3 other real and complicated prediction models 
+1. Fair: bench press / body weight = 1
+2. Good: bench press / body weight > 1.5
+3. Professional: bench press / body weight > 2
+
